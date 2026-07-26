@@ -1,0 +1,231 @@
+{
+  "main": {
+    "id": "eb75d4f72b5fda19",
+    "type": "split",
+    "children": [
+      {
+        "id": "992c2c1d22af3eac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7785d5cd65893df3",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0d2a6596d98f9d88",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8d654eb3276dbcc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d48f124cb2c7fc7d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "02b33ecd4dc78664",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "faaa746d4f314407",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5db248d9374bc5b6",
+    "type": "split",
+    "children": [
+      {
+        "id": "82fc6f32c426d1a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b4a2cd90af9f0df8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "07 Operations/Templates/Mission Template.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Mission Template"
+            }
+          },
+          {
+            "id": "8a8a9aff8404aa03",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "07 Operations/Templates/Mission Template.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Mission Template"
+            }
+          },
+          {
+            "id": "4b5242b495f47cd1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1a6058a3b4fd2b5d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "7498d18091d4e933",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "07 Operations/Templates/Mission Template.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Mission Template"
+            }
+          },
+          {
+            "id": "dfebc6990212d856",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "d48f124cb2c7fc7d",
+  "lastOpenFiles": [
+    "01 Doctrine/RISK_MANAGEMENT.md.md",
+    "00 Command/SYSTEM_AUDIT.md.md",
+    "01 Doctrine/OPERATING_PRINCIPLES.md.md",
+    "01 Doctrine/PROJECT_PANAMA.md.md",
+    "01 Doctrine/AGENT_INTERACTION_PROTOCOL.md.md",
+    "01 Doctrine/KNOWLEDGE_HIERARCHY.md.md",
+    "01 Doctrine/MISSION_LIFECYCLE.md.md",
+    "01 Doctrine/COMMUNICATION_STANDARD.md.md",
+    "01 Doctrine/DECISION_FRAMEWORK.md.md",
+    "01 Doctrine/EXECUTION_STANDARD.md.md",
+    "03 Agents/GRIND.md.md",
+    "03 Agents/PETER PARKER.md.md",
+    "10 Dashboard/Forge HQ.md",
+    "03 Agents/EXESEC.md.md",
+    "03 Agents/BP.md.md",
+    "03 Agents/FORGE.md.md",
+    "03 Agents/WARBUCKS.md.md",
+    "00 Command/EXECUTION_QUEUE.md.md",
+    "03 Agents/AGENT_REGISTRY.MD.md",
+    "00 Command/BUILD_LEDGER.md.md",
+    "00 Command/CURRENT_STATE.md.md",
+    "00 Command/FORGE.md.md",
+    "00 Command/FORGE_BOOT.md.md",
+    "07 Operations/Templates/Mission Template.md",
+    "07 Operations/Templates",
+    "07 Operations/Templates.md",
+    "99 Archive",
+    "10 Dashboard",
+    "09 Decisions",
+    "08 Daily Notes",
+    "07 Operations",
+    "06 Projects",
+    "05 Resources",
+    "04 Knowledge",
+    "03 Agents"
+  ]
+}
