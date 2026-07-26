@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "992c2c1d22af3eac",
+        "id": "118c52eb8021488a",
         "type": "tabs",
         "children": [
           {
-            "id": "7785d5cd65893df3",
+            "id": "a8a7686151eac101",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -187,13 +187,19 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "d48f124cb2c7fc7d",
   "lastOpenFiles": [
-    "01 Doctrine/RISK_MANAGEMENT.md.md",
+    "README.md.md",
+    "06 Projects/FORGE_INFRASTRUCTURE_PHASE_2.md.md",
+    "00 Command/CURRENT_STATE.md.md",
+    "00 Command/BUILD_LEDGER.md.md",
+    "00 Command/FORGE_BOOT.md.md",
     "00 Command/SYSTEM_AUDIT.md.md",
+    "01 Doctrine/RISK_MANAGEMENT.md.md",
     "01 Doctrine/OPERATING_PRINCIPLES.md.md",
     "01 Doctrine/PROJECT_PANAMA.md.md",
     "01 Doctrine/AGENT_INTERACTION_PROTOCOL.md.md",
@@ -211,13 +217,9 @@
     "03 Agents/WARBUCKS.md.md",
     "00 Command/EXECUTION_QUEUE.md.md",
     "03 Agents/AGENT_REGISTRY.MD.md",
-    "00 Command/BUILD_LEDGER.md.md",
-    "00 Command/CURRENT_STATE.md.md",
     "00 Command/FORGE.md.md",
-    "00 Command/FORGE_BOOT.md.md",
     "07 Operations/Templates/Mission Template.md",
     "07 Operations/Templates",
-    "07 Operations/Templates.md",
     "99 Archive",
     "10 Dashboard",
     "09 Decisions",
