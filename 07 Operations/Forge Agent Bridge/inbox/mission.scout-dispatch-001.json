@@ -1,0 +1,28 @@
+{
+  "mission_id": "FORGE-014D1",
+  "work_package_id": "SCOUT-DISPATCH-001",
+  "assigned_agent": "SCOUT",
+  "objective": "Prove that a Forge-owned mission can be dispatched to Claude without Samuel copying or retyping the mission.",
+  "required_deliverable": "A structured Scout handoff confirming the assigned doctrine was loaded and returning a concise analysis of the bridge test.",
+  "approved_inputs": [
+    "Forge Vault Scout doctrine",
+    "this mission packet"
+  ],
+  "constraints": [
+    "No corporate BP data",
+    "No spending",
+    "No destructive actions",
+    "Do not claim success unless output is actually written and validated"
+  ],
+  "authority_tier": 1,
+  "completion_test": [
+    "Claude invoked programmatically",
+    "Scout doctrine loaded from vault",
+    "handoff JSON written to expected path",
+    "handoff schema validates",
+    "audit record written",
+    "Samuel performed no copy/paste between Forge and Claude"
+  ],
+  "return_format": "JSON handoff matching handoff.schema.json",
+  "status": "READY_FOR_LOCAL_TEST"
+}

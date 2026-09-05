@@ -111,17 +111,21 @@ Responsibilities:
 Status: Planned
 
 Role:  
-Research and Intelligence.
+Director of Content Production.
 
 Responsibilities:
 
-- Research
+- Knowledge Warrior publishing
     
-- Competitive analysis
+- Editorial standards
     
-- Technical investigation
+- Website, marketing, and newsletter content
     
-- Knowledge gathering
+- Commercial training product development
+    
+- Delegated production execution via Claude
+    
+- Executive Quality Review before delivery to Sam
     
 
 ---

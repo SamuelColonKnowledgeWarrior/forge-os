@@ -6,5 +6,6 @@
   "quickadd",
   "cmdr",
   "obsidian-icon-folder",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-local-rest-api"
 ]

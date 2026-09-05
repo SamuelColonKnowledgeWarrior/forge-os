@@ -2,16 +2,14 @@
 
 ## Active Build
 
-Build 005 — EXECUTION_QUEUE.md
+None. Build 008 (DECISION_REGISTER.md) is completed and logged in BUILD_LEDGER.md. Build 009 (Peter Parker Agent Activation Pilot) is locked as the next target, but has no artifact yet — see BUILD_LEDGER.md's Next Locked Build entry.
 
 ## Next Locked Build
 
-Build 006 — Forge Agent Profile
+Build 009 — Peter Parker Agent Activation Pilot (locked 2026-08-11; no artifact created yet — see BUILD_LEDGER.md).
 
 ## Waiting on Forge
 
-- Build Forge Agent Profile
-    
 - Audit Doctrine
     
 - Audit Missions
@@ -45,6 +43,14 @@ None
 - Build 003 — BUILD_LEDGER.md ✅
     
 - Build 004 — AGENT_REGISTRY.md ✅
+    
+- Build 005 — EXECUTION_QUEUE.md ✅
+    
+- Build 006 — VAULT_INDEX.md ✅
+    
+- Build 007 — ACTIVE_MISSION_REGISTER.md ✅
+    
+- Build 008 — DECISION_REGISTER.md ✅
     
 
 ## Execution Rule

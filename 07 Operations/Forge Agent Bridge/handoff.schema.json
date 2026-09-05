@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "mission_id",
+    "work_package_id",
+    "agent",
+    "status",
+    "deliverable_path",
+    "evidence",
+    "assumptions",
+    "unresolved_risks",
+    "decision_required",
+    "recommended_next_action",
+    "completed_at"
+  ],
+  "properties": {
+    "mission_id": {
+      "type": "string"
+    },
+    "work_package_id": {
+      "type": "string"
+    },
+    "agent": {
+      "const": "SCOUT"
+    },
+    "status": {
+      "enum": [
+        "COMPLETE",
+        "FAILED",
+        "BLOCKED"
+      ]
+    },
+    "deliverable_path": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unresolved_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision_required": {
+      "type": "boolean"
+    },
+    "recommended_next_action": {
+      "type": "string"
+    },
+    "completed_at": {
+      "type": "string"
+    }
+  }
+}
