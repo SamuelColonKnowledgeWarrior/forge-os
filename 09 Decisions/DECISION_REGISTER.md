@@ -159,3 +159,21 @@
 - Source Handoff: C:\Users\Family\OneDrive\Forge\Forge\07 Operations\Forge Agent Bridge\outbox\handoff.grind-dispatch-forge-20260905-093616.json
 - Authority: Forge/Sam per existing decision doctrine
 
+
+## FORGE-20260905-091533 — Decision Required — 2026-09-05 09:51:15
+- Agent: SCOUT
+- Work Package: SCOUT-DISPATCH-FORGE-20260905-091533
+- Status: OPEN
+- Recommended Action: Forge/Samuel to: (1) authorize live web access for Scout to re-verify current pricing and feature sets on the shortlisted platforms (Thinkific, Podia, LearnWorlds, Kajabi) before any commitment; (2) supply budget ceiling, expected catalog size, and whether certificates/compliance tracking are required so the recommendation can be sharpened; (3) make the final platform selection and any spend/contract decision, which is outside Scout's Tier 1 authority.
+- Source Handoff: C:\Users\Family\OneDrive\Forge\Forge\07 Operations\Forge Agent Bridge\outbox\handoff.scout-dispatch-forge-20260905-091533.json
+- Authority: Forge/Sam per existing decision doctrine
+
+
+## FORGE-QUEUE-TEST-001 — Decision Required — 2026-09-05 10:04:29
+- Agent: PETER
+- Work Package: PETER-DISPATCH-FORGE-QUEUE-TEST-001
+- Status: OPEN
+- Recommended Action: Forge to confirm whether this general recommendation satisfies BUILD 015A queue validation, or to supply sanitized book/platform source material for a follow-up tailored recommendation
+- Source Handoff: C:\Users\Family\OneDrive\Forge\Forge\07 Operations\Forge Agent Bridge\outbox\handoff.peter-dispatch-forge-queue-test-001.json
+- Authority: Forge/Sam per existing decision doctrine
+

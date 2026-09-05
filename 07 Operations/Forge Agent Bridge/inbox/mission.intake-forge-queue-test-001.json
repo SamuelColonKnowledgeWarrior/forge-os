@@ -1,0 +1,10 @@
+﻿{
+    "mission_id":  "FORGE-QUEUE-TEST-001",
+    "objective":  "Create one concise recommendation for improving Knowledge Warrior book awareness.",
+    "deliverable":  "One concise recommendation.",
+    "context":  "BUILD 015A live queue validation.",
+    "authority_tier":  "Tier 1",
+    "completion_test":  "Return one concise recommendation.",
+    "return_format":  "Markdown",
+    "status":  "INTAKE"
+}

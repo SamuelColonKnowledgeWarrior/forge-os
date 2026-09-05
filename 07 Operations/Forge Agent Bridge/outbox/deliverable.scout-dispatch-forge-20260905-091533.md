@@ -1,69 +1,96 @@
-# Research Brief — Best Platforms to Sell Knowledge Warrior Digital Training Courses Online
+# SCOUT Research Brief — Platforms for Selling Knowledge Warrior Digital Training Courses Online
 
 **Mission ID:** FORGE-20260905-091533
 **Work Package ID:** SCOUT-DISPATCH-FORGE-20260905-091533
 **Agent:** SCOUT
-**Objective:** Research and compare the best current options for selling Knowledge Warrior digital training courses online and provide a concise recommendation.
+**Date:** 2026-09-05
 
-## Source Note (read first)
+---
 
-Live web search/fetch was requested for this brief but was not authorized in this session (`WebSearch` returned "permission not granted" on every attempt). Per Scout's Research Standard, this brief does not fabricate citations, pricing, or statistics to compensate. Instead, it draws on stable, well-established platform positioning and business models (category, pricing structure, feature set) that are unlikely to have changed in kind even if exact dollar figures have shifted. **All specific prices below are approximate and last-known, not live-verified — confirm current pricing directly on each vendor's site before any purchase decision.** If Forge needs live-verified current pricing/feature data, that requires either (a) re-running this research with web access authorized, or (b) manual verification against vendor sites.
+## 1. Research Note on Evidence Quality (read first)
 
-## Platforms Compared
+Live web research tools (WebSearch, WebFetch) were requested for this mission but were **not authorized in this session** — calls to both returned permission errors before any page was retrieved. No live pricing pages, review sites, or vendor documentation were accessed.
 
-| Platform | Model | Approx. Pricing Tier (unverified) | Best For | Key Strength | Key Limitation |
-|---|---|---|---|---|---|
-| **Kajabi** | All-in-one: courses + email marketing + funnels + community + podcasts | Higher (~$70–$300+/mo) | Creators wanting one platform for course + marketing + community, no third-party stack | Deep marketing automation, no transaction fees, mature ecosystem | Cost is the highest of the group; steeper learning curve |
-| **LearnWorlds** | Structured course/training platform with strong assessment & certification tooling | Mid-to-high (~$30–$300+/mo) | Formal training/certification businesses needing quizzes, exams, certificates, white-label mobile app | Strongest assessment/certification and interactive-content feature set | Marketing/community features weaker than Kajabi |
-| **Thinkific** | Course-builder platform, add-on marketplace for marketing/community | Low-to-mid (~$0–$150+/mo) | Solo creators wanting a clean course builder without forced bundling | No transaction fees on paid plans (historically); flexible | Marketing/email/community require add-ons or external tools |
-| **Teachable** | Course + coaching platform, own-branded school | Low-to-mid (~$0–$150+/mo) | Solo creators/coaches wanting fast setup | Easy to launch, established track record | Historically weaker native community/marketing tools than Kajabi |
-| **Podia** | All-in-one storefront: courses, memberships, downloads, webinars, built-in email | Low-to-mid (~$30–$90/mo) | Solo creators wanting simplicity + built-in email at lower cost than Kajabi | Good value all-in-one for a single operator | Smaller ecosystem/integration base than Kajabi |
-| **Skool** | Community-first platform with gamification (points/levels) plus a lightweight course tool | Flat, low (~$99/mo, historically) | Cohort/membership communities where engagement and peer interaction matter as much as content | Strong community engagement mechanics, simple flat pricing | No native funnels/email marketing automation — needs pairing with an external email tool |
-| **Udemy** | Open marketplace, Udemy controls pricing/discounts and takes a large revenue share on marketplace-driven sales | Free to list; revenue-share based | Discovery/lead-gen, not primary revenue | Built-in traffic/audience discovery | Creator does not own the customer relationship or pricing; heavy revenue share; brand dilution risk for a proprietary training brand |
-| **Gumroad** | Simple digital product/course storefront | Low, flat % fee per sale, no monthly | Fast, low-overhead launch or testing a course concept | Minimal setup friction, low fixed cost | Minimal course-structuring, marketing, or certification features |
-| **Circle** | Community platform, often paired with a separate course tool | Mid (~$40–$200+/mo) | Creators building a cohort/community "home base" alongside courses | Strong community/discussion infrastructure | Course delivery is secondary to community; often needs pairing |
+This brief is therefore built entirely from **Scout's trained general knowledge** of the online course-platform market (knowledge current through approximately January 2026), not from a live scrape. Consequences:
 
-## Decision Factors Not Yet Known (needed to sharpen this from "compare" to "pick")
+- Platform **existence, general positioning, and feature categories** are high-confidence.
+- Specific **prices, fee percentages, and plan names** are lower-confidence — vendors change pricing frequently, and figures below should be treated as directional, not contractual.
+- **No statistic, quote, or price in this document is a live-verified citation.** Where a number is given, it is Scout's best recollection, flagged as such.
 
-This brief cannot responsibly narrow to a single platform without input on:
+**Recommended action before any purchase decision:** re-run this research with live web access authorized, or have a human confirm current pricing directly on each vendor's site immediately before signing up. This is flagged explicitly in the handoff as an unresolved risk.
 
-1. **Format** — Are Knowledge Warrior courses primarily self-paced/evergreen, cohort-based/live, or a mix?
-2. **Certification/compliance need** — Does the training require quizzes, exams, or issued certificates (tilts toward LearnWorlds)?
-3. **Community emphasis** — Is ongoing peer engagement/community central to the offer (tilts toward Skool or Circle), or is content delivery the core product (tilts toward Teachable/Thinkific/LearnWorlds)?
-4. **Existing tooling** — Does Knowledge Warrior already have an email/CRM/marketing stack, or is an all-in-one (Kajabi/Podia) more valuable to avoid stitching tools together?
-5. **Budget ceiling** — Monthly platform spend tolerance materially changes the field (Gumroad/Skool/Podia vs. Kajabi/LearnWorlds).
-6. **Audience ownership priority** — If long-term email list/customer ownership matters more than short-term discovery traffic, marketplaces (Udemy) should be a secondary/lead-gen channel only, not the primary sales venue.
+---
 
-## Recommendation (Tier 1 — research-level guidance, not a final commitment)
+## 2. Framing the Decision
 
-Based on the comparison above and absent the inputs in the section above, Scout's directional read:
+Selling digital training courses online generally comes down to three architectural choices:
 
-- **If Knowledge Warrior's training has a certification/structured-curriculum character** (consistent with a "training" brand), **LearnWorlds** is the strongest fit on features, with **Kajabi** as the fallback if built-in marketing automation matters more than assessment depth.
-- **If budget efficiency and simplicity are the priority for a solo/small operation**, **Podia** or **Thinkific** are the more defensible low-cost, low-lock-in choices.
-- **If community/engagement is a core part of the offer** (not just content delivery), **Skool** is worth a direct trial given its current market momentum in cohort-style training communities.
-- **Udemy** should be treated only as a possible secondary discovery channel, not the primary storefront — the marketplace model works against owning the customer relationship and pricing, which matters for a proprietary training brand.
+1. **All-in-one course/membership platforms** (hosting + payments + marketing in one product)
+2. **Marketplaces** (built-in audience, but you don't own the customer or the pricing)
+3. **Self-hosted / plugin-based** (own website + a course plugin, e.g. WordPress + LearnDash)
 
-**This is guidance to narrow the field, not a final platform selection.** Committing spend to any of these (subscription cost, annual contract, or transaction-fee exposure) is a Tier 3 decision reserved for Samuel per Scout's authority boundaries.
+Knowledge Warrior's requirements are assumed (see Assumptions) to be: professional/compliance-style training content, need for credibility and brand control, likely repeat/B2B or cohort buyers, and a preference for owning the customer relationship rather than routing it through a marketplace. Given that framing, options are compared below primarily as **all-in-one platforms vs. marketplace vs. self-hosted**.
 
-## Assumptions
+---
 
-- "Knowledge Warrior digital training courses" refers to the Personal Forge branch of Knowledge Warrior (per mission context), not any corporate S.M. Lawrence/BP training material — no corporate/proprietary data was accessed or needed for this brief.
-- The mission calls for a comparison and concise recommendation to inform a decision, not an executed purchase or contract signature.
+## 3. Comparison of Current Major Options
 
-## Evidence / Sources
+### A. All-in-one hosted platforms (own branded site, they host it)
 
-- No live external sources were retrievable in this session (`WebSearch` tool access was requested and not granted). Platform descriptions above reflect general, stable positioning of each named platform's business model and are **not** sourced from a live-verified citation. Treat pricing figures as unverified placeholders, not facts to act on.
+| Platform | Positioning | Approx. pricing shape (verify live) | Strengths | Watch-outs |
+|---|---|---|---|---|
+| **Kajabi** | Premium all-in-one: courses, membership, email marketing, funnels, community | Historically ~$150–$400+/mo depending on tier; no per-course transaction fee | Strong marketing/automation built in; good for building a full "brand + funnel," not just a course | Most expensive of the group; steeper learning curve; overkill if you only need simple course delivery |
+| **Teachable** | Course-focused, simple, popular with solo creators | Historically ~$40–$130+/mo tiers, some plans carry a transaction fee on top | Easy to launch quickly; solid checkout/payment experience; good for a single flagship course | Less robust community/marketing tooling than Kajabi; higher tiers needed to drop transaction fees |
+| **Thinkific** | Course-focused, similar niche to Teachable, historically more generous free tier | Free tier available historically; paid tiers roughly ~$40–$200+/mo | Flexible course structuring; no transaction fees on paid plans historically; good middle-ground | Marketing automation weaker than Kajabi; some features gated to higher tiers |
+| **Podia** | Simple all-in-one for courses + digital downloads + community/memberships | Historically ~$30–$90/mo range | Simpler pricing, good for creators bundling courses with downloads/coaching; solid for lean operations | Less enterprise-grade reporting; smaller ecosystem/integrations than Kajabi |
+| **LearnWorlds** | Course platform with strong interactive/assessment features | Historically ~$30–$300+/mo | Good for compliance/certification-style training — interactive video, quizzes, certificates | Pricing scales fast with features you may need for compliance training (certificates, assessments) |
+| **Skool** | Community-first platform with courses attached | Flat pricing historically (~$99/mo range) regardless of size | Strong for cohort/community-driven training with ongoing engagement, not just one-off purchase | Less suited to a polished "storefront" for one-time B2B course sales; community-centric UX |
 
-## Unresolved Risks
+### B. Marketplaces (they bring buyers, you don't own the customer)
 
-- Pricing figures listed are approximate/unverified and may be materially out of date; using them to build a budget without re-verification would be a factual risk.
-- No information was provided about Knowledge Warrior's actual course format, budget, or existing tooling, so the recommendation section is directional, not a confident final answer.
-- If a decision is needed on a compressed timeline, the lack of live web verification in this session should be flagged before Forge/Samuel acts on this brief.
+| Platform | Positioning | Model | Strengths | Watch-outs |
+|---|---|---|---|---|
+| **Udemy / Udemy Business** | Massive built-in learner marketplace | Revenue share heavily favors Udemy on marketplace-driven sales; Udemy Business is a separate B2B licensing channel | Instant audience access, no marketing lift required to get first sales | Little brand control, aggressive discounting culture that trains buyers to expect low prices, weak direct customer relationship — generally a poor fit for a firm trying to build a "Knowledge Warrior" brand |
+| **Gumroad** | Lightweight digital product storefront | Simple percentage-based fee per sale, low/no monthly cost | Fastest to launch, minimal setup, fine for simple downloadable/self-paced content | Not built for structured multi-module course delivery, weaker learner experience/progress tracking than dedicated LMS platforms |
 
-## Decision Required
+### C. Self-hosted (own website + plugin)
 
-**YES** — Forge/Samuel should either (a) supply the missing decision factors above so Scout can re-run a sharper comparison, or (b) authorize a follow-up research pass with live web access to verify current pricing/features before any platform commitment, or (c) proceed directly to a Tier 3 selection decision using this brief as directional input only.
+| Approach | Positioning | Model | Strengths | Watch-outs |
+|---|---|---|---|---|
+| **WordPress + LearnDash (or LifterLMS/similar)** | Full ownership, hosted on your own domain/infrastructure | One-time/annual plugin license + your own hosting cost | Maximum control and brand ownership, no revenue share, integrates with existing WordPress site if one already exists | Requires ongoing technical maintenance (hosting, updates, security), more setup effort, support burden falls on you or a contractor |
 
-## Recommended Next Action
+---
 
-Route this brief back to Forge for synthesis. If a firmer platform pick is needed before spend is committed, dispatch a follow-up Scout work package with (1) web access authorized and (2) answers to the six decision factors above, so pricing and the final 2-platform shortlist can be verified rather than approximated.
+## 4. Synthesis — What the Comparison Suggests
+
+- If the top priority is **speed to first sale with minimal setup**, a marketplace (Gumroad for simple content, Udemy Business only if targeting enterprise L&D buyers) is fastest but weakest for brand-building.
+- If the top priority is **owning the brand, the customer relationship, and long-term pricing flexibility**, an all-in-one hosted platform is the stronger category. Within that category:
+  - **Thinkific or Podia** are reasonable starting points if the goal is to launch lean and validate demand before investing in heavier marketing automation.
+  - **Kajabi** is the stronger choice if Knowledge Warrior intends to build a broader funnel (email sequences, upsells, membership, multiple products) rather than just sell one course.
+  - **LearnWorlds** is worth particular attention if the training needs formal assessments, certificates of completion, or compliance-style tracking — common needs for "training courses" in a professional/safety context.
+  - **Skool** is worth considering only if the model is a paid ongoing community/cohort rather than a one-time course purchase.
+- If Knowledge Warrior already operates a WordPress site and has (or can contract) technical maintenance capacity, **LearnDash on WordPress** removes platform revenue share entirely and maximizes long-term control — at the cost of more setup/maintenance responsibility.
+
+**Scout's Tier-1 read (research synthesis, not a final decision):** for a firm building a named training brand ("Knowledge Warrior") that wants to look credible, retain customer data/email lists, and potentially issue certificates, an **all-in-one hosted platform (Thinkific, Podia, or LearnWorlds if certificates are needed) is the strongest starting category**, with Kajabi as the upgrade path once a marketing funnel is being actively built out. Marketplaces are better treated as a secondary distribution channel, not the primary storefront.
+
+Final platform selection, and any commitment of spend, is outside Scout's authority (Tier 3 — pricing/spending/contracts belong to Samuel) and is flagged as a decision required below.
+
+---
+
+## 5. Assumptions Made
+
+- Knowledge Warrior's digital training courses are professional/compliance/skills-oriented content (not casual hobbyist content), and the buyer is likely an individual professional or a business purchasing for employees.
+- Knowledge Warrior wants to own its brand, customer list, and pricing — not primarily rely on a marketplace's audience.
+- No existing website/CMS commitment was specified in the mission; if Knowledge Warrior already runs on WordPress, that materially favors the LearnDash self-hosted option.
+- Budget sensitivity and course catalog size (one flagship course vs. many) were not specified in the mission and materially affect which tier of any platform is appropriate.
+
+## 6. Unresolved Risks / Gaps
+
+- **No live pricing verification was possible this session** (WebSearch/WebFetch access denied) — all prices/fees above are approximate and must be reconfirmed on vendor sites before any signup or purchase.
+- Feature sets, transaction-fee structures, and plan names on these platforms change frequently; this brief may already be stale on specific numbers even though the platform landscape itself is stable.
+- Mission did not specify budget ceiling, catalog size, whether certificates/compliance tracking are required, or whether an existing website/CMS already exists — all of which would sharpen the recommendation significantly.
+- No independent review-site or analyst data was consulted (none was accessible this session), so this is a single-source (Scout's internal knowledge) comparison rather than a cross-verified one.
+
+---
+
+*End of Scout research brief.*

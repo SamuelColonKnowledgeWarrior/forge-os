@@ -1,0 +1,17 @@
+﻿{
+    "mission_id":  "FORGE-QUEUE-TEST-001",
+    "work_package_id":  "PETER-DISPATCH-FORGE-QUEUE-TEST-001",
+    "assigned_agent":  "PETER",
+    "started_at":  "2026-09-05T10:09:01.2031717-05:00",
+    "ended_at":  "2026-09-05T10:09:34.8321158-05:00",
+    "claude_exit_code":  0,
+    "doctrine_path":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\03 Agents\\Peter\\PETER_DOCTRINE.md",
+    "mission_packet":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\inbox\\mission.peter-dispatch-forge-queue-test-001.json",
+    "deliverable":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\outbox\\deliverable.peter-dispatch-forge-queue-test-001.md",
+    "handoff":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\outbox\\handoff.peter-dispatch-forge-queue-test-001.json",
+    "raw_cli_output":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\audit\\claude-raw.peter-dispatch-forge-queue-test-001.json",
+    "validation":  "PASS",
+    "validation_errors":  [
+
+                          ]
+}
