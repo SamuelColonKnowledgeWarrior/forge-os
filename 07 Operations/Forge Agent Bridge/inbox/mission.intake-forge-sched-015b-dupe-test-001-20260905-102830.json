@@ -1,0 +1,10 @@
+﻿{
+    "mission_id":  "FORGE-SCHED-015B-DUPE-TEST-001-20260905-102830",
+    "objective":  "BUILD 015B duplicate-fire validation.",
+    "deliverable":  "One concise validation response.",
+    "context":  "Scheduler duplicate protection test.",
+    "authority_tier":  "Tier 1",
+    "completion_test":  "Return one concise response.",
+    "return_format":  "Markdown",
+    "status":  "INTAKE"
+}

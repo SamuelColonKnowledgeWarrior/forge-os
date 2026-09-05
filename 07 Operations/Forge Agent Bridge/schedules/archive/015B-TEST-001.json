@@ -1,0 +1,12 @@
+﻿{
+    "schedule_id":  "015B-TEST-001",
+    "enabled":  true,
+    "frequency":  "DAILY",
+    "time":  "10:22",
+    "objective":  "Create one concise recommendation for improving Knowledge Warrior recurring marketing execution.",
+    "deliverable":  "One concise recommendation.",
+    "context":  "BUILD 015B scheduled mission validation.",
+    "authority_tier":  "Tier 1",
+    "completion_test":  "Return one concise recommendation.",
+    "return_format":  "Markdown"
+}

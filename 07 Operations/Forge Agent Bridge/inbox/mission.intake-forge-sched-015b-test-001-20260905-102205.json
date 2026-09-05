@@ -1,0 +1,10 @@
+﻿{
+    "mission_id":  "FORGE-SCHED-015B-TEST-001-20260905-102205",
+    "objective":  "Create one concise recommendation for improving Knowledge Warrior recurring marketing execution.",
+    "deliverable":  "One concise recommendation.",
+    "context":  "BUILD 015B scheduled mission validation.",
+    "authority_tier":  "Tier 1",
+    "completion_test":  "Return one concise recommendation.",
+    "return_format":  "Markdown",
+    "status":  "INTAKE"
+}

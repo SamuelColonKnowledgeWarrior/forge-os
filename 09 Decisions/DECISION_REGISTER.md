@@ -177,3 +177,21 @@
 - Source Handoff: C:\Users\Family\OneDrive\Forge\Forge\07 Operations\Forge Agent Bridge\outbox\handoff.peter-dispatch-forge-queue-test-001.json
 - Authority: Forge/Sam per existing decision doctrine
 
+
+## FORGE-SCHED-015B-TEST-001-20260905-102205 — Decision Required — 2026-09-05 10:24:30
+- Agent: GRIND
+- Work Package: GRIND-DISPATCH-FORGE-SCHED-015B-TEST-001-20260905-102205
+- Status: OPEN
+- Recommended Action: Forge to review and, if validated, either close this as a successful test dispatch or route a follow-up mission with real cadence/channel data for a fully grounded recommendation.
+- Source Handoff: C:\Users\Family\OneDrive\Forge\Forge\07 Operations\Forge Agent Bridge\outbox\handoff.grind-dispatch-forge-sched-015b-test-001-20260905-102205.json
+- Authority: Forge/Sam per existing decision doctrine
+
+
+## FORGE-SCHED-015B-DUPE-TEST-001-20260905-102830 — Decision Required — 2026-09-05 10:36:23
+- Agent: BUILDER
+- Work Package: BUILDER-DISPATCH-FORGE-SCHED-015B-DUPE-TEST-001-20260905-102830
+- Status: OPEN
+- Recommended Action: Forge QC review and archive this test cycle's inbox/outbox artifacts once confirmed
+- Source Handoff: C:\Users\Family\OneDrive\Forge\Forge\07 Operations\Forge Agent Bridge\outbox\handoff.builder-dispatch-forge-sched-015b-dupe-test-001-20260905-102830.json
+- Authority: Forge/Sam per existing decision doctrine
+

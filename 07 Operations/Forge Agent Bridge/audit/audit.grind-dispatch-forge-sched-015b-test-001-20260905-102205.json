@@ -1,0 +1,17 @@
+﻿{
+    "mission_id":  "FORGE-SCHED-015B-TEST-001-20260905-102205",
+    "work_package_id":  "GRIND-DISPATCH-FORGE-SCHED-015B-TEST-001-20260905-102205",
+    "assigned_agent":  "GRIND",
+    "started_at":  "2026-09-05T10:23:51.7105226-05:00",
+    "ended_at":  "2026-09-05T10:24:29.0127643-05:00",
+    "claude_exit_code":  0,
+    "doctrine_path":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\03 Agents\\GRIND\\GRIND_DOCTRINE.md",
+    "mission_packet":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\inbox\\mission.grind-dispatch-forge-sched-015b-test-001-20260905-102205.json",
+    "deliverable":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\outbox\\deliverable.grind-dispatch-forge-sched-015b-test-001-20260905-102205.md",
+    "handoff":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\outbox\\handoff.grind-dispatch-forge-sched-015b-test-001-20260905-102205.json",
+    "raw_cli_output":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\audit\\claude-raw.grind-dispatch-forge-sched-015b-test-001-20260905-102205.json",
+    "validation":  "PASS",
+    "validation_errors":  [
+
+                          ]
+}
