@@ -1,0 +1,22 @@
+﻿{
+    "mission_id":  "FORGE-20260905-093616",
+    "objective":  "Create a concise marketing recommendation for increasing awareness of Frontline Safety \u0026 Leadership.",
+    "deliverable":  "One concise marketing recommendation.",
+    "context":  "Knowledge Warrior. BUILD 014F end-to-end automation validation only.",
+    "source":  "FORGE_MISSION_INTAKE",
+    "created_at":  "2026-09-05T09:36:16.8882202-05:00",
+    "assigned_agent":  "GRIND",
+    "required_deliverable":  "One concise marketing recommendation.",
+    "authority_tier":  1,
+    "completion_test":  [
+                            "Assigned specialist doctrine loaded.",
+                            "Mission objective completed.",
+                            "Deliverable written.",
+                            "Structured handoff written.",
+                            "Mission and work package IDs preserved.",
+                            "Audit validates PASS."
+                        ],
+    "return_format":  "Markdown deliverable plus JSON handoff",
+    "status":  "READY_FOR_DISPATCH",
+    "work_package_id":  "GRIND-DISPATCH-FORGE-20260905-093616"
+}

@@ -193,19 +193,21 @@
   },
   "active": "d48f124cb2c7fc7d",
   "lastOpenFiles": [
+    "07 Operations/Forge Agent Bridge/returns/return.grind-dispatch-forge-20260905-093616.md",
+    "07 Operations/Forge Agent Bridge/audit/audit.grind-dispatch-forge-20260905-093616.json",
+    "07 Operations/Forge Agent Bridge/audit/claude-raw.grind-dispatch-forge-20260905-093616.json",
+    "07 Operations/Forge Agent Bridge/outbox/handoff.grind-dispatch-forge-20260905-093616.json",
+    "07 Operations/Forge Agent Bridge/outbox/deliverable.grind-dispatch-forge-20260905-093616.md",
+    "07 Operations/Forge Agent Bridge/inbox/mission.grind-dispatch-forge-20260905-093616.json",
+    "07 Operations/Forge Agent Bridge/inbox/mission.grind-routed-forge-20260905-093616.json",
+    "07 Operations/Forge Agent Bridge/inbox/mission.intake-forge-20260905-093616.json",
+    "07 Operations/Forge Agent Bridge/forge-state.ps1",
     "07 Operations/Forge Agent Bridge/returns/return.grind-dispatch-forge-20260905-092129.md",
     "07 Operations/Forge Agent Bridge/audit/audit.grind-dispatch-forge-20260905-092129.json",
     "07 Operations/Forge Agent Bridge/audit/claude-raw.grind-dispatch-forge-20260905-092129.json",
     "07 Operations/Forge Agent Bridge/outbox/handoff.grind-dispatch-forge-20260905-092129.json",
     "07 Operations/Forge Agent Bridge/outbox/deliverable.grind-dispatch-forge-20260905-092129.md",
-    "07 Operations/Forge Agent Bridge/inbox/mission.grind-dispatch-forge-20260905-092129.json",
-    "07 Operations/Forge Agent Bridge/inbox/mission.grind-routed-forge-20260905-092129.json",
-    "07 Operations/Forge Agent Bridge/inbox/mission.intake-forge-20260905-092129.json",
     "07 Operations/Forge Agent Bridge/returns/return.scout-dispatch-forge-20260905-091533.md",
-    "07 Operations/Forge Agent Bridge/returns",
-    "07 Operations/Forge Agent Bridge/forge-return.ps1",
-    "07 Operations/Forge Agent Bridge/audit/audit.scout-dispatch-forge-20260905-091533.json",
-    "07 Operations/Forge Agent Bridge/audit/claude-raw.scout-dispatch-forge-20260905-091533.json",
     "07 Operations/Forge Agent Bridge/outbox/deliverable.scout-dispatch-forge-20260905-091533.md",
     "07 Operations/Forge Agent Bridge/outbox/deliverable.grind-dispatch-forge-014d4-router-test-001.md",
     "07 Operations/Forge Agent Bridge/outbox/deliverable.builder-dispatch-001.md",
@@ -226,8 +228,6 @@
     "00 Command/FORGE_BOOT.md.md",
     "00 Command/SYSTEM_AUDIT.md.md",
     "01 Doctrine/RISK_MANAGEMENT.md.md",
-    "01 Doctrine/OPERATING_PRINCIPLES.md.md",
-    "01 Doctrine/PROJECT_PANAMA.md.md",
-    "01 Doctrine/AGENT_INTERACTION_PROTOCOL.md.md"
+    "01 Doctrine/OPERATING_PRINCIPLES.md.md"
   ]
 }

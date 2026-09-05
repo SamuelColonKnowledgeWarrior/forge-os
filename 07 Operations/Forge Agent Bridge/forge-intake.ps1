@@ -60,4 +60,16 @@ else {
     Write-Host "Exit Code: $ExitCode"
 }
 
+if ($ExitCode -eq 0) {
+    $AuditFile = Get-ChildItem (Join-Path $PSScriptRoot "audit") -Filter ("audit.*" + $MissionID + ".json") |
+        Sort-Object LastWriteTime -Descending |
+        Select-Object -First 1
+
+    if ($AuditFile) {
+        powershell -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot "forge-return.ps1") -AuditPath $AuditFile.FullName
+        powershell -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot "forge-state.ps1") -AuditPath $AuditFile.FullName
+    }
+}
+
 exit $ExitCode
+

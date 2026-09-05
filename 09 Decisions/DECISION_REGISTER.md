@@ -141,3 +141,21 @@
 
 - Built 2026-08-11 as Build 008, using only evidence in [[DECISION_FRAMEWORK.md]], [[CURRENT_STATE.md]]'s Locked Decisions, [[BUILD_LEDGER.md]], and [[EXECUTION_QUEUE.md]] at build time.
 - No existing file was modified to produce this register.
+
+## FORGE-20260905-092129 — Decision Required — 2026-09-05 09:34:17
+- Agent: GRIND
+- Work Package: GRIND-DISPATCH-FORGE-20260905-092129
+- Status: OPEN
+- Recommended Action: Supply the actual book brief/manuscript summary, prior sales/list data, author platform status, and current training/speaking/consulting offer details (or confirm none exist yet) so the positioning angle and funnel can be validated or corrected before asset production begins
+- Source Handoff: C:\Users\Family\OneDrive\Forge\Forge\07 Operations\Forge Agent Bridge\outbox\handoff.grind-dispatch-forge-20260905-092129.json
+- Authority: Forge/Sam per existing decision doctrine
+
+
+## FORGE-20260905-093616 — Decision Required — 2026-09-05 09:37:03
+- Agent: GRIND
+- Work Package: GRIND-DISPATCH-FORGE-20260905-093616
+- Status: OPEN
+- Recommended Action: Forge to confirm/adjust the positioning line, then authorize GRIND to draft the media pitch, positioning-line options, and target outlet list (Tier 1 work) for this recommendation
+- Source Handoff: C:\Users\Family\OneDrive\Forge\Forge\07 Operations\Forge Agent Bridge\outbox\handoff.grind-dispatch-forge-20260905-093616.json
+- Authority: Forge/Sam per existing decision doctrine
+
