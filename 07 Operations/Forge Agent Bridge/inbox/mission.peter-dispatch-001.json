@@ -1,0 +1,29 @@
+{
+  "mission_id": "FORGE-014D2",
+  "work_package_id": "PETER-DISPATCH-001",
+  "assigned_agent": "PETER",
+  "objective": "Prove the universal Forge dispatcher can route a work package to Peter Parker using Peter's local doctrine.",
+  "required_deliverable": "Create a concise one-page internal content production brief confirming Peter's role, boundaries, and how Peter should receive future Forge work packages.",
+  "approved_inputs": [
+    "Peter local doctrine",
+    "this mission packet"
+  ],
+  "constraints": [
+    "No corporate BP/S.M. Lawrence proprietary data",
+    "No spending",
+    "No external publication",
+    "No cross-agent delegation",
+    "Do not fabricate evidence or outcomes"
+  ],
+  "authority_tier": 1,
+  "completion_test": [
+    "Peter doctrine is read",
+    "deliverable is written to Forge Agent Bridge outbox",
+    "handoff JSON is written",
+    "handoff agent is PETER",
+    "handoff mission/work package IDs match",
+    "audit validates PASS"
+  ],
+  "return_format": "Markdown deliverable plus JSON handoff",
+  "status": "READY_FOR_LOCAL_TEST"
+}

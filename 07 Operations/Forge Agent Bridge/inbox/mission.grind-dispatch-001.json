@@ -1,0 +1,29 @@
+﻿{
+    "mission_id":  "FORGE-014D3-G",
+    "work_package_id":  "GRIND-DISPATCH-001",
+    "assigned_agent":  "GRIND",
+    "objective":  "Validate local Forge universal dispatch routing for GRIND.",
+    "required_deliverable":  "Create a short Markdown validation report confirming doctrine was loaded, mission identity was preserved, authority boundaries were respected, and no corporate data was accessed.",
+    "approved_inputs":  [
+                            "GRIND local doctrine",
+                            "this mission packet"
+                        ],
+    "constraints":  [
+                        "Validation mission only.",
+                        "Do not access corporate BP or S.M. Lawrence data.",
+                        "Do not expand mission scope.",
+                        "Do not purchase software or make external commitments.",
+                        "Report status truthfully."
+                    ],
+    "authority_tier":  1,
+    "completion_test":  [
+                            "Agent doctrine loaded.",
+                            "Mission and work package IDs preserved.",
+                            "Markdown validation deliverable written.",
+                            "JSON handoff written.",
+                            "No corporate data accessed.",
+                            "Audit validates PASS."
+                        ],
+    "return_format":  "Markdown deliverable plus JSON handoff",
+    "status":  "READY_FOR_LOCAL_TEST"
+}

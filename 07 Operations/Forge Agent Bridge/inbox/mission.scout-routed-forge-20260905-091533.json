@@ -1,0 +1,22 @@
+﻿{
+    "mission_id":  "FORGE-20260905-091533",
+    "objective":  "Research and compare the best current options for selling Knowledge Warrior digital training courses online and provide a concise recommendation.",
+    "deliverable":  "Complete the mission objective and return a professional, usable deliverable.",
+    "context":  "Knowledge Warrior / Personal Forge operation.",
+    "source":  "FORGE_MISSION_INTAKE",
+    "created_at":  "2026-09-05T09:15:33.5506708-05:00",
+    "assigned_agent":  "SCOUT",
+    "required_deliverable":  "Complete the mission objective and return a professional, usable deliverable.",
+    "authority_tier":  1,
+    "completion_test":  [
+                            "Assigned specialist doctrine loaded.",
+                            "Mission objective completed.",
+                            "Deliverable written.",
+                            "Structured handoff written.",
+                            "Mission and work package IDs preserved.",
+                            "Audit validates PASS."
+                        ],
+    "return_format":  "Markdown deliverable plus JSON handoff",
+    "status":  "READY_FOR_DISPATCH",
+    "work_package_id":  "SCOUT-DISPATCH-FORGE-20260905-091533"
+}

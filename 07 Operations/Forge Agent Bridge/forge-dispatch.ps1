@@ -1,62 +1,124 @@
-﻿param(
+param(
+  [Parameter(Mandatory=$true)]
+  [string]$MissionPath,
+
   [string]$Vault = "C:\Users\Family\OneDrive\Forge\Forge"
 )
+
 $ErrorActionPreference = "Stop"
-$Build = Join-Path $Vault "07 Operations\Forge Agent Bridge"
-$Inbox = Join-Path $Build "inbox"
+
+$Build  = Join-Path $Vault "07 Operations\Forge Agent Bridge"
+$Inbox  = Join-Path $Build "inbox"
 $Outbox = Join-Path $Build "outbox"
-$Audit = Join-Path $Build "audit"
+$Audit  = Join-Path $Build "audit"
 New-Item -ItemType Directory -Force -Path $Inbox,$Outbox,$Audit | Out-Null
 
-$PacketSource = Join-Path $PSScriptRoot "mission.scout-dispatch-001.json"
-$SchemaSource = Join-Path $PSScriptRoot "handoff.schema.json"
-Copy-Item $PacketSource (Join-Path $Inbox "mission.scout-dispatch-001.json") -Force
-Copy-Item $SchemaSource (Join-Path $Build "handoff.schema.json") -Force
+if (-not (Test-Path $MissionPath)) { throw "Mission file not found: $MissionPath" }
 
-$ScoutCandidates = @(
-  (Join-Path $Vault "scout"),
-  (Join-Path $Vault "03 Agents\Scout"),
-  (Join-Path $Vault "03 Agents\SCOUT")
+$mission = Get-Content $MissionPath -Raw | ConvertFrom-Json
+
+$requiredMissionFields = @(
+  "mission_id","work_package_id","assigned_agent","objective",
+  "required_deliverable","authority_tier","completion_test","return_format","status"
 )
-$ScoutPath = $ScoutCandidates | Where-Object { Test-Path $_ } | Select-Object -First 1
-if (-not $ScoutPath) { throw "Scout doctrine folder not found in expected Forge Vault locations." }
+foreach ($f in $requiredMissionFields) {
+  if ($null -eq $mission.$f) { throw "Mission packet missing required field: $f" }
+}
 
-$Claude = Get-Command claude -ErrorAction SilentlyContinue
-if (-not $Claude) { throw "Claude Code CLI command 'claude' was not found on PATH." }
+$agent = ([string]$mission.assigned_agent).ToUpperInvariant()
 
-$MissionPath = Join-Path $Inbox "mission.scout-dispatch-001.json"
-$HandoffPath = Join-Path $Outbox "handoff.scout-dispatch-001.json"
-$DeliverablePath = Join-Path $Outbox "deliverable.scout-dispatch-001.md"
-$AuditPath = Join-Path $Audit "audit.scout-dispatch-001.json"
+$agentMap = @{
+  "SCOUT"    = @{ Folder="Scout";    Doctrine="SCOUT_DOCTRINE.md" }
+  "PETER"    = @{ Folder="Peter";    Doctrine="PETER_DOCTRINE.md" }
+  "GRIND"    = @{ Folder="GRIND";    Doctrine="GRIND_DOCTRINE.md" }
+  "EXESEC"   = @{ Folder="ExeSec";   Doctrine="EXESEC_DOCTRINE.md" }
+  "WARBUCKS" = @{ Folder="Warbucks"; Doctrine="WARBUCKS_DOCTRINE.md" }
+  "BUILDER"  = @{ Folder="Builder";  Doctrine="BUILDER_DOCTRINE.md" }
+}
+
+if (-not $agentMap.ContainsKey($agent)) {
+  throw "Unsupported assigned_agent '$agent'. Allowed: $($agentMap.Keys -join ', ')"
+}
+
+$agentFolder = Join-Path $Vault ("03 Agents\" + $agentMap[$agent].Folder)
+$doctrinePath = Join-Path $agentFolder $agentMap[$agent].Doctrine
+
+if (-not (Test-Path $doctrinePath)) { throw "$agent doctrine not found: $doctrinePath" }
+
+$claude = Get-Command claude -ErrorAction SilentlyContinue
+if (-not $claude) { throw "Claude Code CLI command 'claude' was not found on PATH." }
+
+$slug = ([string]$mission.work_package_id).ToLowerInvariant()
+$slug = $slug -replace '[^a-z0-9\-]+','-'
+$slug = $slug.Trim('-')
+
+$canonicalMissionPath = Join-Path $Inbox ("mission." + $slug + ".json")
+if ((Resolve-Path $MissionPath).Path -ne $canonicalMissionPath) {
+  Copy-Item $MissionPath $canonicalMissionPath -Force
+}
+
+$HandoffPath     = Join-Path $Outbox ("handoff." + $slug + ".json")
+$DeliverablePath = Join-Path $Outbox ("deliverable." + $slug + ".md")
+$AuditPath       = Join-Path $Audit ("audit." + $slug + ".json")
+$RawPath         = Join-Path $Audit ("claude-raw." + $slug + ".json")
+
+Remove-Item $HandoffPath,$DeliverablePath -Force -ErrorAction SilentlyContinue
 
 $Prompt = @"
-You are executing a Forge work package as SCOUT.
-Read the mission packet at: $MissionPath
-Read Scout's persistent operating doctrine and relevant skill files under: $ScoutPath
-Do not use or access corporate BP/S.M. Lawrence data.
-Execute only the mission packet.
-Write the substantive deliverable to: $DeliverablePath
-Then write a JSON handoff to: $HandoffPath
-The JSON handoff MUST contain exactly these required semantic fields:
-mission_id, work_package_id, agent, status, deliverable_path, evidence, assumptions, unresolved_risks, decision_required, recommended_next_action, completed_at.
-agent must be SCOUT. status must be COMPLETE, FAILED, or BLOCKED.
-Do not claim files exist unless you actually wrote them.
+You are executing a Forge work package as $agent.
+
+Read the mission packet at:
+$canonicalMissionPath
+
+Read your persistent operating doctrine at:
+$doctrinePath
+
+Follow the doctrine and execute only the assigned work package.
+Do not use or access corporate BP/S.M. Lawrence proprietary data unless the mission explicitly contains sanitized approved input.
+
+Write the substantive deliverable to:
+$DeliverablePath
+
+Then write a JSON handoff to:
+$HandoffPath
+
+The JSON handoff MUST contain these fields:
+mission_id
+work_package_id
+agent
+status
+deliverable_path
+evidence
+assumptions
+unresolved_risks
+decision_required
+recommended_next_action
+completed_at
+
+Rules:
+- agent must be $agent
+- status must be COMPLETE, FAILED, or BLOCKED
+- do not claim files exist unless you actually wrote them
+- do not exceed the mission authority tier
+- do not recruit or assign other agents
 "@
 
 $started = (Get-Date).ToString("o")
+
 Push-Location $Vault
 try {
   $result = & claude -p $Prompt --permission-mode acceptEdits --output-format json 2>&1
-} finally {
+  $exit = $LASTEXITCODE
+}
+finally {
   Pop-Location
 }
-$exit = $LASTEXITCODE
-$ended = (Get-Date).ToString("o")
 
-$rawPath = Join-Path $Audit "claude-raw.scout-dispatch-001.json"
-$result | Out-File -FilePath $rawPath -Encoding utf8
+$ended = (Get-Date).ToString("o")
+$result | Out-File -FilePath $RawPath -Encoding utf8
 
 $validationErrors = @()
+
 if ($exit -ne 0) { $validationErrors += "Claude CLI exited with code $exit" }
 if (-not (Test-Path $HandoffPath)) { $validationErrors += "Handoff file missing" }
 if (-not (Test-Path $DeliverablePath)) { $validationErrors += "Deliverable file missing" }
@@ -64,40 +126,61 @@ if (-not (Test-Path $DeliverablePath)) { $validationErrors += "Deliverable file 
 if (Test-Path $HandoffPath) {
   try {
     $h = Get-Content $HandoffPath -Raw | ConvertFrom-Json
-    $required = @("mission_id","work_package_id","agent","status","deliverable_path","evidence","assumptions","unresolved_risks","decision_required","recommended_next_action","completed_at")
+    $required = @(
+      "mission_id","work_package_id","agent","status","deliverable_path",
+      "evidence","assumptions","unresolved_risks","decision_required",
+      "recommended_next_action","completed_at"
+    )
     foreach ($f in $required) {
       if ($null -eq $h.$f) { $validationErrors += "Missing handoff field: $f" }
     }
-    if ($h.agent -ne "SCOUT") { $validationErrors += "Agent is not SCOUT" }
-    if ($h.status -notin @("COMPLETE","FAILED","BLOCKED")) { $validationErrors += "Invalid handoff status" }
-  } catch { $validationErrors += "Handoff JSON parse failed: $($_.Exception.Message)" }
+    if (([string]$h.agent).ToUpperInvariant() -ne $agent) {
+      $validationErrors += "Handoff agent '$($h.agent)' does not match assigned agent '$agent'"
+    }
+    if ($h.status -notin @("COMPLETE","FAILED","BLOCKED")) {
+      $validationErrors += "Invalid handoff status '$($h.status)'"
+    }
+    if ($h.mission_id -ne $mission.mission_id) {
+      $validationErrors += "Handoff mission_id does not match mission packet"
+    }
+    if ($h.work_package_id -ne $mission.work_package_id) {
+      $validationErrors += "Handoff work_package_id does not match mission packet"
+    }
+  }
+  catch {
+    $validationErrors += "Handoff JSON parse failed: $($_.Exception.Message)"
+  }
 }
 
 $auditRecord = [ordered]@{
-  mission_id = "FORGE-014D1"
-  work_package_id = "SCOUT-DISPATCH-001"
-  started_at = $started
-  ended_at = $ended
-  claude_exit_code = $exit
-  scout_doctrine_path = "$ScoutPath"
-  mission_packet = "$MissionPath"
-  deliverable = "$DeliverablePath"
-  handoff = "$HandoffPath"
-  raw_cli_output = "$rawPath"
-  validation = $(if ($validationErrors.Count -eq 0) {"PASS"} else {"FAIL"})
+  mission_id        = [string]$mission.mission_id
+  work_package_id   = [string]$mission.work_package_id
+  assigned_agent    = $agent
+  started_at        = $started
+  ended_at          = $ended
+  claude_exit_code  = $exit
+  doctrine_path     = "$doctrinePath"
+  mission_packet    = "$canonicalMissionPath"
+  deliverable       = "$DeliverablePath"
+  handoff           = "$HandoffPath"
+  raw_cli_output    = "$RawPath"
+  validation        = $(if ($validationErrors.Count -eq 0) {"PASS"} else {"FAIL"})
   validation_errors = $validationErrors
 }
-$auditRecord | ConvertTo-Json -Depth 5 | Out-File -FilePath $AuditPath -Encoding utf8
+
+$auditRecord | ConvertTo-Json -Depth 6 | Out-File -FilePath $AuditPath -Encoding utf8
 
 Write-Host ""
-Write-Host "FORGE 014D-1 LOCAL DISPATCH TEST: $($auditRecord.validation)"
+Write-Host "FORGE UNIVERSAL DISPATCH: $($auditRecord.validation)"
+Write-Host "Agent: $agent"
+Write-Host "Mission: $($mission.mission_id)"
+Write-Host "Work Package: $($mission.work_package_id)"
 Write-Host "Audit: $AuditPath"
+
 if ($validationErrors.Count -gt 0) {
   $validationErrors | ForEach-Object { Write-Host " - $_" }
   exit 1
 }
+
 Write-Host "Handoff: $HandoffPath"
 Write-Host "Deliverable: $DeliverablePath"
-
-
-

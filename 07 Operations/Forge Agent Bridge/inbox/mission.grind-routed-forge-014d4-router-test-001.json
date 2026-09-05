@@ -1,0 +1,20 @@
+﻿{
+    "objective":  "Develop a marketing campaign to relaunch Frontline Safety \u0026 Leadership and increase qualified audience awareness.",
+    "context":  "Knowledge Warrior commercial publishing. This is a routing validation test only.",
+    "deliverable":  "A concise marketing campaign recommendation.",
+    "mission_id":  "FORGE-014D4-ROUTER-TEST-001",
+    "assigned_agent":  "GRIND",
+    "required_deliverable":  "A concise marketing campaign recommendation.",
+    "authority_tier":  1,
+    "completion_test":  [
+                            "Assigned specialist doctrine loaded.",
+                            "Mission objective completed.",
+                            "Deliverable written.",
+                            "Structured handoff written.",
+                            "Mission and work package IDs preserved.",
+                            "Audit validates PASS."
+                        ],
+    "return_format":  "Markdown deliverable plus JSON handoff",
+    "status":  "READY_FOR_DISPATCH",
+    "work_package_id":  "GRIND-DISPATCH-FORGE-014D4-ROUTER-TEST-001"
+}

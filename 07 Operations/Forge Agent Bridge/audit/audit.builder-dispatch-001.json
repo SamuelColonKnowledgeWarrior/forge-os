@@ -1,0 +1,17 @@
+﻿{
+    "mission_id":  "FORGE-014D3-B",
+    "work_package_id":  "BUILDER-DISPATCH-001",
+    "assigned_agent":  "BUILDER",
+    "started_at":  "2026-09-05T09:06:02.8747181-05:00",
+    "ended_at":  "2026-09-05T09:06:34.0547780-05:00",
+    "claude_exit_code":  0,
+    "doctrine_path":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\03 Agents\\Builder\\BUILDER_DOCTRINE.md",
+    "mission_packet":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\inbox\\mission.builder-dispatch-001.json",
+    "deliverable":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\outbox\\deliverable.builder-dispatch-001.md",
+    "handoff":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\outbox\\handoff.builder-dispatch-001.json",
+    "raw_cli_output":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\audit\\claude-raw.builder-dispatch-001.json",
+    "validation":  "PASS",
+    "validation_errors":  [
+
+                          ]
+}

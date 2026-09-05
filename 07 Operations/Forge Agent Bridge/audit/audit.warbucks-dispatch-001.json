@@ -1,0 +1,17 @@
+﻿{
+    "mission_id":  "FORGE-014D3-W",
+    "work_package_id":  "WARBUCKS-DISPATCH-001",
+    "assigned_agent":  "WARBUCKS",
+    "started_at":  "2026-09-05T09:04:52.1140117-05:00",
+    "ended_at":  "2026-09-05T09:05:29.9560018-05:00",
+    "claude_exit_code":  0,
+    "doctrine_path":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\03 Agents\\Warbucks\\WARBUCKS_DOCTRINE.md",
+    "mission_packet":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\inbox\\mission.warbucks-dispatch-001.json",
+    "deliverable":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\outbox\\deliverable.warbucks-dispatch-001.md",
+    "handoff":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\outbox\\handoff.warbucks-dispatch-001.json",
+    "raw_cli_output":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\audit\\claude-raw.warbucks-dispatch-001.json",
+    "validation":  "PASS",
+    "validation_errors":  [
+
+                          ]
+}
