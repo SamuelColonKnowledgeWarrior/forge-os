@@ -1,0 +1,10 @@
+﻿{
+    "mission_id":  "FORGE-TRIGGER-015C-FILE-TEST-001-20260906-202307",
+    "objective":  "Create one concise recommendation for improving Knowledge Warrior execution discipline.",
+    "deliverable":  "One concise recommendation.",
+    "context":  "BUILD 015C file-created trigger validation.",
+    "authority_tier":  "Tier 1",
+    "completion_test":  "Return one concise recommendation.",
+    "return_format":  "Markdown",
+    "status":  "INTAKE"
+}
