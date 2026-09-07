@@ -1,0 +1,13 @@
+﻿{
+    "trigger_id":  "015C-FILE-TEST-001",
+    "enabled":  true,
+    "type":  "FILE_CREATED",
+    "path":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\trigger-test",
+    "filter":  "*.txt",
+    "objective":  "Create one concise recommendation for improving Knowledge Warrior execution discipline.",
+    "deliverable":  "One concise recommendation.",
+    "context":  "BUILD 015C file-created trigger validation.",
+    "authority_tier":  "Tier 1",
+    "completion_test":  "Return one concise recommendation.",
+    "return_format":  "Markdown"
+}

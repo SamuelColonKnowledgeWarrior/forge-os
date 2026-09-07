@@ -1,0 +1,17 @@
+﻿{
+    "mission_id":  "FORGE-TRIGGER-015C-FILE-TEST-001-20260906-195322",
+    "work_package_id":  "BUILDER-DISPATCH-FORGE-TRIGGER-015C-FILE-TEST-001-20260906-195322",
+    "assigned_agent":  "BUILDER",
+    "started_at":  "2026-09-06T19:53:25.4893497-05:00",
+    "ended_at":  "2026-09-06T19:53:48.7041734-05:00",
+    "claude_exit_code":  0,
+    "doctrine_path":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\03 Agents\\Builder\\BUILDER_DOCTRINE.md",
+    "mission_packet":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\inbox\\mission.builder-dispatch-forge-trigger-015c-file-test-001-20260906-195322.json",
+    "deliverable":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\outbox\\deliverable.builder-dispatch-forge-trigger-015c-file-test-001-20260906-195322.md",
+    "handoff":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\outbox\\handoff.builder-dispatch-forge-trigger-015c-file-test-001-20260906-195322.json",
+    "raw_cli_output":  "C:\\Users\\Family\\OneDrive\\Forge\\Forge\\07 Operations\\Forge Agent Bridge\\audit\\claude-raw.builder-dispatch-forge-trigger-015c-file-test-001-20260906-195322.json",
+    "validation":  "PASS",
+    "validation_errors":  [
+
+                          ]
+}
